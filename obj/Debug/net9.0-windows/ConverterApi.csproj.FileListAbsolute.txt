@@ -20,3 +20,4 @@ C:\dev\cs\tihon cs\ConverterApi\obj\Debug\net9.0-windows\refint\ConverterApi.dll
 C:\dev\cs\tihon cs\ConverterApi\obj\Debug\net9.0-windows\ConverterApi.pdb
 C:\dev\cs\tihon cs\ConverterApi\obj\Debug\net9.0-windows\ConverterApi.genruntimeconfig.cache
 C:\dev\cs\tihon cs\ConverterApi\obj\Debug\net9.0-windows\ref\ConverterApi.dll
+C:\dev\cs\tihon cs\ConverterApi\obj\Debug\net9.0-windows\ConverterApi.sourcelink.json
