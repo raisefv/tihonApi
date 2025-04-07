@@ -1,0 +1,40 @@
+﻿<Window x:Class="ConverterApi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="1" Text="Из валюты:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="FromCurrencyComboBox" SelectionChanged="OnCurrencySelectionChanged" 
+                  SelectedIndex="0" Margin="0,5"/>
+
+        <TextBlock Grid.Row="2" Text="В валюту:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+        <ComboBox Grid.Row="2" Grid.Column="1" x:Name="ToCurrencyComboBox" SelectionChanged="OnCurrencySelectionChanged"
+                  SelectedIndex="1" Margin="0,5"/>
+        
+        <TextBlock Grid.Row="3" Text="Сумма:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="AmountTextBox" 
+                 Margin="0,5" Text="1"/>
+        
+        <Button Grid.Row="4" Grid.ColumnSpan="2"
+                Content="Конвертировать" Margin="0,10" Height="30" 
+                Click="OnConvertButton_Click"/>
+
+        <TextBlock Grid.Row="5" Grid.ColumnSpan="2" x:Name="ResultTextBlock" 
+                   HorizontalAlignment="Center" Margin="0,55, 0, 0"/>
+    </Grid>
+</Window>
